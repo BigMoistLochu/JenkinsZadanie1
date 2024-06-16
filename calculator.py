@@ -9,7 +9,7 @@ if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: python multiply.py <num1> <num2>")
         sys.exit(1)
-
+# test komentarz
     num1 = float(sys.argv[1])
     num2 = float(sys.argv[2])
 
