@@ -4,14 +4,15 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                python .\calculator.py 3 3
+                sh 'python calculator.py 3 3'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                python .\test_calculator.py
+                sh 'python test_calculator.py'
             }
         }
     }
 }
+
