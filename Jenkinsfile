@@ -3,12 +3,12 @@ pipeline {
     triggers {
     pollSCM('* * * * *')
 }
-    stage("Checkout") {
+    stages {
+        stage("Checkout") {
             steps {
                 git url: 'https://github.com/BigMoistLochu/JenkinsZadanie1/tree/main', branch: 'main'
             }
         }
-    stages {
         stage('Build') {
             steps {
                 echo 'Building...'
